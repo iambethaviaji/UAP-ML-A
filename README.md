@@ -71,12 +71,14 @@ Confusion Matrix tersebut menunjukkan bahwa model mampu memprediksi citra dengan
 
 ### Tampilan HomePage
 
-![image]()
+![image](assets/home1.png)
+![image](assets/home2.png)
 
 ### Tampilan HomePage Setelah Upload Image
 
-![image]()
+![image](assets/upload.png)
 
 ### Tampilan Prediction Result
 
-![image]()
+![image](assets/hasil1.png)
+![image](assets/hasil2.png)
