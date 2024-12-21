@@ -20,8 +20,8 @@ InceptionV3 adalah model CNN canggih dari Google yang dirancang untuk klasifikas
 MobileNetV2 adalah model CNN ringan yang dirancang untuk perangkat dengan sumber daya terbatas. Menggunakan blok inverted residual dan depthwise separable convolution, model ini sangat efisien dalam memproses citra tanpa mengorbankan akurasi. MobileNetV2 ideal untuk aplikasi real-time seperti pemilahan sampah otomatis berbasis perangkat seluler, dengan kecepatan prediksi tinggi dan kebutuhan komputasi rendah.
 
 ## Dependensi & Langkah Instalasi 📃
-dependencies = ["tensorflow>=2.18.0", "joblib>=1.4.2", "scikit-learn>=1.6.0", "streamlit>=1.41.1"]
-install tensorflow di pdm =
+- dependencies = ["tensorflow>=2.18.0", "joblib>=1.4.2", "scikit-learn>=1.6.0", "streamlit>=1.41.1"]
+- install tensorflow di pdm =
 - pdm info -> pastikan sudah berada di .venv
 - pdm run python -m pip show tensorflow -> cek tensorflow apakah sudah di .venv
 - pdm run python -m ensurepip --upgrade
