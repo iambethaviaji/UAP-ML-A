@@ -41,31 +41,23 @@ install tensorflow di pdm =
 
 ### InceptionV3 Model ✨
 
-![image]()
+![image](assets/Plot_Inceptionv3.png)
 
-Plot diatas menunjukkan bahwa *training_acc* stabil mendekati **100%**, namun *val_acc* nya cuma mencapai **94%**, hal ini menjadi indikasi bahwa model mengalami *overfitting*.
+Plot diatas menunjukkan bahwa *Model Accuracy* cukup stabil dalam proses training, namun *Model Loss* mengalami **overfitting* yang ditandai dengan grafik berfluktuasi yang tidak wajar.
 
-![image]()
+![image](assets/cm_inceptionv3.png)
 
-Dapat dilihat pada plot loss diatas. *Training dan Val Loss* sama - sama turun, namun val_loss cenderung lebih tinggi dibanding training_loss nya. Hal ini mungkin saja disebabkan karena terjadi *Overfitting* pada Model dan perlu dilakukan *tuning* lebih lanjut untuk menghilangkan *Overfit*.
-
-![image]()
-
-Gambar diatas menunjukkan *Classification Report* dari Model setelah dilakukan predict terhadap *Testing Set*. Terlihat bahwa Model sangat akurat dan lebih baik dari CNN Model dalam generalisasi data dengan Akurasi tepat **100%**.
+Gambar diatas menunjukkan *Classification Report* dari Model InceptionV3 menghasilkan nilai akurasi sebesar *90%* yang dapat digolongkan cukup optimal.
 
 ### MobileNetV2 Model ✨
 
-![image]()
+![image](assets/Plot_Mobilenetv2.png)
 
-Plot diatas menunjukkan bahwa *training_acc* stabil mendekati **100%**, namun *val_acc* nya cuma mencapai **94%**, hal ini menjadi indikasi bahwa model mengalami *overfitting*.
+Plot diatas menunjukkan bahwa *Model Accuracy* cukup stabil dalam proses training dan *Model Loss* sudah dalam kategori cukup baik dibuktikan dengan grafik yang tidak fluktuatif.
 
-![image]()
+![image](assets/cm_mobilenetv2.png)
 
-Dapat dilihat pada plot loss diatas. *Training dan Val Loss* sama - sama turun, namun val_loss cenderung lebih tinggi dibanding training_loss nya. Hal ini mungkin saja disebabkan karena terjadi *Overfitting* pada Model dan perlu dilakukan *tuning* lebih lanjut untuk menghilangkan *Overfit*.
-
-![image]()
-
-Gambar diatas menunjukkan *Classification Report* dari Model setelah dilakukan predict terhadap *Testing Set*. Terlihat bahwa Model sangat akurat dan lebih baik dari CNN Model dalam generalisasi data dengan Akurasi tepat **100%**.
+Gambar diatas menunjukkan *Classification Report* dari Model InceptionV3 menghasilkan nilai akurasi sebesar **84%** yang dapat digolongkan cukup optimal.
 
 ## Local Web Deployment
 
