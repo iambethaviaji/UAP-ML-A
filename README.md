@@ -45,9 +45,13 @@ install tensorflow di pdm =
 
 Plot diatas menunjukkan bahwa *Model Accuracy* cukup stabil dalam proses training, namun *Model Loss* mengalami **overfitting* yang ditandai dengan grafik berfluktuasi yang tidak wajar.
 
-![image](assets/cm_inceptionv3.png)
+![image](assets/classreport_inceptionv3.png)
 
 Gambar diatas menunjukkan *Classification Report* dari Model InceptionV3 menghasilkan nilai akurasi sebesar *90%* yang dapat digolongkan cukup optimal.
+
+![image](assets/cm_inceptionv3.png)
+
+Confusion Matrix tersebut menunjukkan bahwa model mampu memprediksi citra dengan cukup baik dengan kesalahan yang tidak terlalu signifikan.
 
 ### MobileNetV2 Model ✨
 
@@ -55,9 +59,13 @@ Gambar diatas menunjukkan *Classification Report* dari Model InceptionV3 menghas
 
 Plot diatas menunjukkan bahwa *Model Accuracy* cukup stabil dalam proses training dan *Model Loss* sudah dalam kategori cukup baik dibuktikan dengan grafik yang tidak fluktuatif.
 
-![image](assets/cm_mobilenetv2.png)
+![image](assets/classreport_mobilenetv2.png)
 
 Gambar diatas menunjukkan *Classification Report* dari Model InceptionV3 menghasilkan nilai akurasi sebesar **84%** yang dapat digolongkan cukup optimal.
+
+![image](assets/cm_mobilenetv2.png)
+
+Confusion Matrix tersebut menunjukkan bahwa model mampu memprediksi citra dengan cukup baik dengan kesalahan yang tidak terlalu signifikan.
 
 ## Local Web Deployment
 
