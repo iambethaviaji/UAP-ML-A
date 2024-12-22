@@ -30,8 +30,10 @@ install tensorflow di pdm =
 - pdm run python -c "import tensorflow as tf; print(tf._version_)"
 
 ## Struktur File 📄
-- **app.py**: Berkas aplikasi utama yang berisi rute dan fungsi.
-- **klasifikasi_sampah.py**: Berkas penerapan dari model untuk klasifikasi dan tampilan antarmuka web.
+- code/: Berkas kode ipynb dari model klasifikasi.
+- src/uap/**app.py**: Berkas aplikasi utama yang berisi rute dan fungsi.
+- src/uap/**klasifikasi_sampah.py**: Berkas penerapan dari model untuk klasifikasi dan tampilan antarmuka web.
+- src/Model/: Berisi saved model berformat .h5 dari kedua arsitektur.
 
 ## Menjalankan App 💻
 - Jalankan skrip dengan streamlit run ./src/app.py
@@ -82,3 +84,6 @@ Confusion Matrix tersebut menunjukkan bahwa model mampu memprediksi citra dengan
 
 ![image](assets/hasil1.png)
 ![image](assets/hasil2.png)
+
+## Author 👨‍💻 
+- [@iambethaviaji](https://github.com/iambethaviaji)
