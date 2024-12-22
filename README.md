@@ -45,7 +45,7 @@ install tensorflow di pdm =
 
 ![image](assets/Plot_Inceptionv3.png)
 
-Plot diatas menunjukkan bahwa *Model Accuracy* cukup stabil dalam proses training, namun *Model Loss* mengalami **overfitting* yang ditandai dengan grafik berfluktuasi yang tidak wajar.
+Plot diatas menunjukkan bahwa *Model Accuracy* cukup stabil dalam proses training, namun *Model Loss* mengalami *overfitting* yang ditandai dengan grafik berfluktuasi yang tidak wajar.
 
 ![image](assets/classreport_inceptionv3.png)
 
@@ -86,4 +86,4 @@ Confusion Matrix tersebut menunjukkan bahwa model mampu memprediksi citra dengan
 ![image](assets/hasil2.png)
 
 ## Author 👨‍💻 
-- [@iambethaviaji](https://github.com/iambethaviaji)
+- Andrian Satrio B. | 202110370311518 (https://github.com/iambethaviaji)
