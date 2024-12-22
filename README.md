@@ -22,8 +22,9 @@ MobileNetV2 adalah model CNN ringan yang dirancang untuk perangkat dengan sumber
 ## Dependensi & Langkah Instalasi 📃
 dependencies = ["tensorflow>=2.18.0", "joblib>=1.4.2", "scikit-learn>=1.6.0", "streamlit>=1.41.1"]
 
-wajib pdm init terlebih dahulu
-install tensorflow di pdm =
+1. wajib pdm init terlebih dahulu
+
+2. install tensorflow di pdm =
 - pdm info -> pastikan sudah berada di .venv
 - pdm run python -m pip show tensorflow -> cek tensorflow apakah sudah di .venv
 - pdm run python -m ensurepip --upgrade
