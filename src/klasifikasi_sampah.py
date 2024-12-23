@@ -4,81 +4,89 @@ from pathlib import Path
 import streamlit as st
 import base64
 
+# Fungsi untuk encode gambar ke base64
 def get_base64_image(image_path):
-    with open(image_path, "rb") as image_file:
-        encoded_string = base64.b64encode(image_file.read()).decode()
-    return encoded_string
+    try:
+        with open(image_path, "rb") as image_file:
+            encoded_string = base64.b64encode(image_file.read()).decode()
+        return encoded_string
+    except FileNotFoundError:
+        st.error("File gambar background tidak ditemukan. Pastikan path sudah benar.")
+        return ""
 
-image_base64 = get_base64_image("src/static/background/bg.png")
+# Path gambar background
+image_path = Path("src/static/background/bg.png")
+image_base64 = get_base64_image(image_path)
 
-background_css = f"""
-<style>
-body {{
-    background-image: url('data:image/jpg;base64,{image_base64}');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-}}
-header {{
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(90deg, rgba(0, 128, 128, 0.8), rgba(0, 191, 255, 0.8));
-    color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 30px;
-}}
-section {{
-    margin: 30px auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.85);
-    border-radius: 15px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-    max-width: 900px;
-}}
-button {{
-    background: linear-gradient(90deg, #1e90ff, #32cd32);
-    color: white;
-    padding: 12px 25px;
-    margin: 15px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: 0.3s;
-}}
-button:hover {{
-    background: linear-gradient(90deg, #32cd32, #1e90ff);
-}}
-.file-upload-container {{
-    text-align: center;
-    margin-top: 20px;
-}}
-.results-container {{
-    text-align: left;
-    background: rgba(50, 50, 50, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}}
-</style>
-"""
-st.markdown(background_css, unsafe_allow_html=True)
+if image_base64:
+    background_css = f"""
+    <style>
+    body {{
+        background-image: url('data:image/png;base64,{image_base64}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }}
+    header {{
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(90deg, rgba(0, 128, 128, 0.8), rgba(0, 191, 255, 0.8));
+        color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+    }}
+    section {{
+        margin: 30px auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.85);
+        border-radius: 15px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        max-width: 900px;
+    }}
+    button {{
+        background: linear-gradient(90deg, #1e90ff, #32cd32);
+        color: white;
+        padding: 12px 25px;
+        margin: 15px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: 0.3s;
+    }}
+    button:hover {{
+        background: linear-gradient(90deg, #32cd32, #1e90ff);
+    }}
+    .file-upload-container {{
+        text-align: center;
+        margin-top: 20px;
+    }}
+    .results-container {{
+        text-align: left;
+        background: rgba(50, 50, 50, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }}
+    </style>
+    """
+    st.markdown(background_css, unsafe_allow_html=True)
 
 # Judul aplikasi
 st.markdown("""
 <header>
-    <h1>Klasifikasi Citra Sampah Organik & Anorganik</h1>
-    <p>Dengan teknologi modern untuk mendukung pengelolaan sampah yang berkelanjutan</p>
+    <h1>Klasifikasi Limbah Konsumsi Rumah Tangga</h1>
+    <p>Dengan teknologi modern untuk mendukung pengelolaan limbah yang berkelanjutan</p>
 </header>
 <section>
-    <p>Model ini dirancang untuk mengidentifikasi dan mengklasifikasikan jenis sampah berdasarkan gambar. 
-       Dengan tujuan mendukung pengelolaan sampah yang lebih efisien, ramah lingkungan, dan mempermudah daur ulang.</p>
-    <p>Manfaatkan teknologi ini untuk meningkatkan kesadaran dan efisiensi dalam proses pemilahan sampah secara otomatis.</p>
+    <p>Model ini dirancang untuk mengidentifikasi dan mengklasifikasikan jenis limbah konsumsi rumah tangga berdasarkan gambar. 
+       Dengan tujuan mendukung pengelolaan limbah yang lebih efisien, ramah lingkungan, dan mempermudah daur ulang.</p>
+    <p>Manfaatkan teknologi ini untuk meningkatkan kesadaran dan efisiensi dalam proses pemilahan limbah secara otomatis.</p>
 </section>
 """, unsafe_allow_html=True)
 
