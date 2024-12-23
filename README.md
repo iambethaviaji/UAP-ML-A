@@ -73,17 +73,18 @@ Confusion Matrix tersebut menunjukkan bahwa model mampu memprediksi citra dengan
 
 ### Tampilan HomePage
 
-![image](assets/home1.png)
-![image](assets/home2.png)
+![image](assets/hp1.png)
+![image](assets/hp2.png)
 
 ### Tampilan HomePage Setelah Upload Image
 
-![image](assets/upload.png)
+![image](assets/up.png)
 
 ### Tampilan Prediction Result
 
-![image](assets/hasil1.png)
-![image](assets/hasil2.png)
+![image](assets/result1.png)
+![image](assets/result2.png)
+![image](assets/result3.png)
 
 ## Author 👨‍💻 
 - Andrian Satrio B. | 202110370311518 (https://github.com/iambethaviaji)
