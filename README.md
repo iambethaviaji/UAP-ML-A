@@ -10,7 +10,7 @@ Teknologi machine learning, seperti CNN dengan arsitektur InceptionV3 dan Mobile
 **InceptionV3 Architecture**
 ![image](assets/inceptionv3.jpg)
 
-InceptionV3 adalah model CNN canggih dari Google yang dirancang untuk klasifikasi gambar dengan efisiensi tinggi. Model ini menggunakan modul Inception yang menggabungkan berbagai ukuran kernel konvolusi, memungkinkan deteksi pola pada berbagai skala. Dengan transfer learning, InceptionV3 dapat diadaptasi untuk mengenali berbagai jenis sampah, seperti plastik, kertas, dan logam, dengan akurasi tinggi. Model ini cocok untuk dataset kompleks yang membutuhkan analisis mendalam terhadap detail visual.
+InceptionV3 adalah model CNN canggih dari Google yang dirancang untuk klasifikasi gambar dengan efisiensi tinggi. Model ini menggunakan modul Inception yang menggabungkan berbagai ukuran kernel konvolusi, memungkinkan deteksi pola pada berbagai skala. Dengan transfer learning, InceptionV3 dapat diadaptasi untuk mengenali berbagai jenis limbah rumah tangga dengan akurasi tinggi. Model ini cocok untuk dataset kompleks yang membutuhkan analisis mendalam terhadap detail visual.
 
 **MobileNetV2 Architecture**
 ![image](assets/mobilenetv2.png)
@@ -87,4 +87,4 @@ Confusion Matrix tersebut menunjukkan bahwa model mampu memprediksi citra dengan
 ![image](assets/result3.png)
 
 ## Author 👨‍💻 
-- Andrian Satrio B. | 202110370311518 (https://github.com/iambethaviaji)
+- Andrian Satrio B. | 202110370311518 [@iambethaviaji](https://github.com/iambethaviaji)
