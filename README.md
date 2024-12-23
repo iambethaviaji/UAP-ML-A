@@ -1,11 +1,9 @@
-# ✨ t-Sort : Trash Sort adalah Klasifikasi Otomatis Sampah Organik & Anorganik Menggunakan InceptionV3 & MobileNetV2 ✨
+# ✨ wasteIt : Klasifikasi Otomatis Limbah Konsumsi Rumah Tangga Menggunakan InceptionV3 & MobileNetV2 ✨
 
 ## Latar Belakang & Tujuan
-Pengelolaan sampah merupakan tantangan global yang terus meningkat, terutama di negara-negara berkembang, di mana sistem pengelolaan limbah sering kali belum memadai. Sampah yang tidak dikelola dengan baik dapat mencemari lingkungan, merusak ekosistem, dan membahayakan kesehatan manusia. Salah satu solusi penting adalah mendaur ulang sampah seperti plastik, kertas, dan logam, sekaligus memastikan pengelolaan limbah B3 (Bahan Berbahaya dan Beracun) secara aman. Namun, proses klasifikasi sampah sering kali menjadi kendala utama karena metode manual memerlukan banyak waktu dan tenaga, serta rentan terhadap kesalahan.
+Pengelolaan limbah rumah tangga menjadi tantangan besar karena dapat mencemari lingkungan dan membahayakan kesehatan. Daur ulang sampah seperti plastik dan sisa makanan penting, tetapi metode manual sering lambat dan kurang akurat. 
 
-Untuk mengatasi masalah ini, teknologi berbasis machine learning, khususnya deep learning, dapat digunakan untuk mengotomatisasi proses klasifikasi sampah dengan lebih cepat dan akurat. Algoritma Convolutional Neural Network (CNN) telah terbukti efektif dalam pengenalan pola pada citra, sehingga dapat dimanfaatkan untuk mengenali dan mengklasifikasikan berbagai jenis sampah berdasarkan karakteristik visualnya. Arsitektur ResNet50, yang memiliki kemampuan unggul dalam mengatasi masalah overfitting dan vanishing gradient, memungkinkan model untuk mempelajari fitur kompleks dengan lebih baik melalui teknik transfer learning.
-
-Penerapan teknologi ini diharapkan mampu mendukung sistem pengelolaan sampah yang lebih efisien dan ramah lingkungan. Dengan mengotomatisasi klasifikasi sampah, teknologi machine learning dapat membantu mengurangi dampak negatif sampah terhadap lingkungan dan kesehatan, sekaligus meningkatkan efektivitas daur ulang serta pengelolaan limbah B3. Solusi ini tidak hanya relevan untuk skala lokal, tetapi juga dapat diadaptasi secara global untuk menghadapi krisis sampah yang semakin besar.
+Teknologi machine learning, seperti CNN dengan arsitektur InceptionV3 dan MobileNetV2, dapat mengotomatisasi klasifikasi sampah secara cepat dan akurat, mendukung daur ulang yang efisien. Solusi ini membantu mengurangi dampak negatif limbah rumah tangga sekaligus meningkatkan pengelolaan sampah berkelanjutan secara lokal dan global.
 
 **Link Dataset yang digunakan:** [Garbage Dataset](https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2).
 
