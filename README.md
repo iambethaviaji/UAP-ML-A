@@ -69,6 +69,10 @@ Gambar diatas menunjukkan *Classification Report* dari Model InceptionV3 menghas
 
 Confusion Matrix tersebut menunjukkan bahwa model mampu memprediksi citra dengan cukup baik dengan kesalahan yang tidak terlalu signifikan.
 
+## Hasil Analisis
+Berdasarkan perbandingan dari kedua arsitektur di atas, InceptionV3 menjadi model yang unggul apabila dinilai dari segi akurasi, namun grafik loss mengalami overfit. Sedangkan apabila dinilai dari segi grafik validasi MobileNetV2 lebih unggul karena lebih baik namun dari segi akurasi berada di bawah InceptionV3. 
+Oleh karena itu, memungkinkan perlunya dilakukan perbaikan dalam pre-processing data seperti ditambahkannya augmentasi. Serta perlu ditambahkannya nilai epoch agar meningkatkan performa model.
+
 ## Local Web Deployment
 
 ### Tampilan HomePage
