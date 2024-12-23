@@ -1,4 +1,4 @@
-# ✨ wasteIt : Klasifikasi Otomatis Limbah Konsumsi Rumah Tangga Menggunakan InceptionV3 & MobileNetV2 ✨
+# ✨ waste-It : Klasifikasi Otomatis Limbah Konsumsi Rumah Tangga Menggunakan InceptionV3 & MobileNetV2 ✨
 
 ## Latar Belakang & Tujuan
 Pengelolaan limbah rumah tangga menjadi tantangan besar karena dapat mencemari lingkungan dan membahayakan kesehatan. Daur ulang sampah seperti plastik dan sisa makanan penting, tetapi metode manual sering lambat dan kurang akurat. 
